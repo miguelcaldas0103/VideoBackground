@@ -1,0 +1,51 @@
+/* General Body and HTML styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-screen video styling */
+.background-video video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keeps video behind the content */
+}
+
+/* Front content styling */
+.front-content {
+  position: relative;
+  z-index: 1; /* Ensures content stays above the video */
+  text-align: center;
+  color: white;
+  margin-top: 20vh;
+}
+
+/* Styling for the heading */
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Toggle button styling */
+.toggle-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
